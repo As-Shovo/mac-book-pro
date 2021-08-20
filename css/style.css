@@ -1,0 +1,102 @@
+/* fonts import from google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+h5{
+    font-size: 16px;
+}
+
+
+.container{
+    max-width: 70%;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+button{
+    padding: 10px 25px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+}
+button:hover{
+    border: 3px solid rgba(150, 150, 150, 0.795);
+    background: black;
+    color: white;
+}
+
+/* -- main Div style --  */
+.main-div{
+    display: flex;
+}
+
+
+/* -- main img --  */
+.main-img img{
+    max-width: 400px;
+    padding-right: 10px;
+    margin-right: 5px;
+}
+
+/* -- product information --  */
+.product-info{
+    margin-left: 10px;
+    padding-left: 15px;
+}
+
+/* -- memory style --  */
+.memory, .storage, .delivery, .promo-code{
+    margin: 30px 0;
+}
+
+/* - table style -  */
+table{
+    border-collapse: collapse;
+}
+
+th , td {
+    width: 300px;
+    text-align: left;
+    border: 1px solid black;
+    padding: 5px 15px;
+}
+
+.table-footer{
+    border-top: 3px solid black;
+}
+
+/* -- input field --  */
+.input-field{
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+#promo-button{
+    background-color: rgba(226, 45, 45, 0.932);
+    color: white;
+}
+
+/* -- footer --  */
+footer{
+    text-align: center;
+    margin-bottom: 20px;
+}
