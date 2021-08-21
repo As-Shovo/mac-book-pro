@@ -29,21 +29,21 @@
                     <div class="memory">
                         <h4>Memory</h4>
                         <button id="memory-8GB">8GB unified memory</button>
-                        <button>16GB unified memory</button>
+                        <button id="memory-16GB">16GB unified memory</button>
                     </div>
 
                     <!-- storage information  -->
                     <div class="storage">
                         <h4>Storage</h4>
-                        <button>256GB SSD storage</button>
-                        <button>512GB SSD storage</button>
-                        <button>1TB SSD storage</button>
+                        <button id="storage-256GB">256GB SSD storage</button>
+                        <button id="storage-512GB">512GB SSD storage</button>
+                        <button id="storage-1TB">1TB SSD storage</button>
                     </div>
                     <!-- delivery information  -->
                     <div class="delivery">
                         <h4>choose your delivery option</h4>
-                        <button>Friday, Aug 25 FREE Delivery</button>
-                        <button>Friday, Aug 21 Delivery charge $20</button>
+                        <button id="delivery-free">Friday, Aug 25 FREE Delivery</button>
+                        <button id="delivery-charge">Friday, Aug 21 Delivery charge $20</button>
                     </div>
 
                     <!-- price table  -->
@@ -55,19 +55,19 @@
                             </tr>
                             <tr>
                                 <td>Extra Memory Cost</td>
-                                <td>$0</td>
+                                <td>$<span id="memory-price">0</span></td>
                             </tr>
                             <tr>
                                 <td>Extra Storage Cost</td>
-                                <td>$0</td>
+                                <td>$<span id="storage-price">0</span></td>
                             </tr>
                             <tr>
                                 <td>Delivery Cost</td>
-                                <td>$0</td>
+                                <td>$<span id="delivery-cost">0</span></td>
                             </tr>
                             <tr class="table-footer">
                                 <td>Total Price</td>
-                                <td>$1299</td>
+                                <td>$<span id="total-price">1299</span></td>
                             </tr>
                         </table>
                     </div>
@@ -86,7 +86,7 @@
     </main>
     <footer>
         <section>
-            <h1>Total: $<span>1299</span></h1>
+            <h1>Total: $<span id="discount-total">1299</span></h1>
         </section>
     </footer>
 

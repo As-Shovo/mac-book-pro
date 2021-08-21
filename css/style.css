@@ -89,6 +89,7 @@ th , td {
 .input-field{
     padding: 10px 25px;
     border-radius: 5px;
+    font-size: 18px;
 }
 #promo-button{
     background-color: rgba(226, 45, 45, 0.932);
