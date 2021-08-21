@@ -144,6 +144,8 @@ document.getElementById('promo-button').addEventListener('click',function(){
     else{
         discountTotal.innerText = 'please Input Valid Promo Code';
     }
+
+    promoInput.value = '';
 })
 
 

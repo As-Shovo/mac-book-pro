@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+ /* ------------------------------ common style  */
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -45,31 +46,35 @@ button:hover{
     color: white;
 }
 
-/* -- main Div style --  */
+button:focus{
+    border: 3px solid rgba(150, 150, 150, 0.795);
+}
+
+/* ------------------------------------------- main Div style --  */
 .main-div{
     display: flex;
 }
 
 
-/* -- main img --  */
+/* ---------------------------------------------- main img --  */
 .main-img img{
     max-width: 400px;
     padding-right: 10px;
     margin-right: 5px;
 }
 
-/* -- product information --  */
+/* ----------------------------------------- product information --  */
 .product-info{
     margin-left: 10px;
     padding-left: 15px;
 }
 
-/* -- memory style --  */
+/* ------------------------------------------------ memory style --  */
 .memory, .storage, .delivery, .promo-code{
     margin: 30px 0;
 }
 
-/* - table style -  */
+/* --------------------------------------------------------- table style -  */
 table{
     border-collapse: collapse;
 }
@@ -85,7 +90,7 @@ th , td {
     border-top: 3px solid black;
 }
 
-/* -- input field --  */
+/* --------------------------------------------------------------------- input field --  */
 .input-field{
     padding: 10px 25px;
     border-radius: 5px;
@@ -96,8 +101,51 @@ th , td {
     color: white;
 }
 
-/* -- footer --  */
+/* --------------------------------------------------------------------- footer --  */
 footer{
     text-align: center;
     margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main-div{
+        flex-direction: column;
+    };
+    .container{
+        width: 100%;
+        margin: 2px;
+    }
+    .product-info{
+        margin: 0;
+        padding: 2px;
+    }
+
+    .main-img img{
+        max-width: 100%;
+        margin: 0;
+        padding: 2px;
+    }
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .main-div{
+        flex-direction: column;
+    };
+    .container{
+        width: 100%;
+        margin: 2px;
+    }
+    .product-info{
+        margin: 0;
+        padding: 2px;
+    }
+
+    .main-img img{
+        max-width: 100%;
+        margin: 0;
+        padding: 2px;
+    }
 }
